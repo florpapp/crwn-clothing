@@ -1,31 +1,29 @@
-.checkout-page {
-  width: 55%;
-  min-height: 90vh;
+.cart-dropdown {
+  position: absolute;
+  width: 240px;
+  height: 340px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 50px auto 0;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  top: 90px;
+  right: 40px;
+  z-index: 5;
 
-  .checkout-header {
-    width: 100%;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid darkgrey;
-
-    .header-block {
-      text-transform: capitalize;
-      width: 23%;
-
-      &:last-child {
-        width: 8%;
-      }
-    }
+  .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
   }
 
-  .total {
-    margin-top: 30px;
-    margin-left: auto;
-    font-size: 36px;
+  .cart-items {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  button {
+    margin-top: auto;
   }
 }
